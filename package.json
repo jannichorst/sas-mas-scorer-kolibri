@@ -1,7 +1,7 @@
 {
-  "name": "mas-scorer",
+  "name": "sas-viya-react-template",
   "version": "1.0.0",
-  "description": "SAS Micro Analytic Score Module Scorer Application",
+  "description": "Minimal SAS Viya template preserving auth and build pipelines",
   "type": "module",
   "main": "electron/dist/main.js",
   "scripts": {
@@ -21,8 +21,7 @@
     "axios": "^1.6.0",
     "electron-store": "^8.2.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^7.12.0"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.0",
@@ -44,8 +43,8 @@
     "wait-on": "^8.0.3"
   },
   "build": {
-    "appId": "com.sas.mas-scorer",
-    "productName": "SAS MAS Scorer",
+    "appId": "com.sas.viya-react-template",
+    "productName": "SAS Viya React Template",
     "directories": {
       "output": "release"
     },
