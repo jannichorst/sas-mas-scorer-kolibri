@@ -1,10 +1,9 @@
-/* Copyright © 2026, SAS Institute Inc., Cary, NC, USA.  All Rights Reserved. */
-/* SPDX-License-Identifier: Apache-2.0 */
-
-/* Main CSS Entry Point - Import all styles */
-@import './variables.css';
-@import './base.css';
-@import './components.css';
-@import './layout.css';
-@import './modules.css';
-@import './scoring.css';
+:root { font-family: Arial, sans-serif; color: #1b1c1d; }
+body { margin: 0; background: #f8f9fb; }
+.page { max-width: 960px; margin: 0 auto; padding: 24px; }
+.card { background: white; border: 1px solid #d8dde3; border-radius: 8px; padding: 16px; margin-bottom: 16px; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0; }
+input { padding: 6px 8px; min-width: 220px; }
+button { padding: 6px 10px; }
+.error { color: #b00020; }
+pre { background: #f4f5f8; padding: 12px; overflow: auto; }

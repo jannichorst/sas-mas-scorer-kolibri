@@ -1,6 +1,10 @@
-// Copyright © 2026, SAS Institute Inc., Cary, NC, USA.  All Rights Reserved.
-// SPDX-License-Identifier: Apache-2.0
+import { viyaClient } from './client';
 
-export * from './client';
-export * from './modules';
-export * from './steps';
+export const getCurrentUser = async (): Promise<unknown> => {
+  const response = await viyaClient.get('/identities/users/@currentUser', {
+    headers: { Accept: 'application/json' },
+  });
+  return response.data;
+};
+
+export { clearCsrfToken, getSasViyaUrl } from './client';
